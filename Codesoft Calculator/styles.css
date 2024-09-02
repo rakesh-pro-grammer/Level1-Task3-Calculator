@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2a2e37;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+    background-color: #333945;
+    border-radius: 30px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 10px 10px 20px #1f2229, -10px -10px 20px #474e5d;
+}
+
+.calculator-screen {
+    background-color: #333945;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: inset 5px 5px 10px #1f2229, inset -5px -5px 10px #474e5d;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    background-color: #333945;
+    border: none;
+    border-radius: 20px;
+    text-align: right;
+    padding: 15px;
+    font-size: 36px;
+    color: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #1f2229, inset -5px -5px 10px #474e5d;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.btn {
+    background-color: #333945;
+    border: none;
+    border-radius: 15px;
+    height: 60px;
+    font-size: 20px;
+    color: #a5f0db;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #1f2229, -5px -5px 10px #474e5d;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.btn:active {
+    box-shadow: inset 5px 5px 10px #1f2229, inset -5px -5px 10px #474e5d;
+}
+
+.btn:focus {
+    outline: none;
+}
